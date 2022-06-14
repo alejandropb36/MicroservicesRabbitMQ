@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Micorservices", "Micorservi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{A887E51B-95BB-4B60-8AEA-18BE0F1BFB95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{9F2538F0-287A-4F42-9E2E-6808B27CA7BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{9F2538F0-287A-4F42-9E2E-6808B27CA7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.IoC", "MicroRabbit.Infra.IoC\MicroRabbit.Infra.IoC.csproj", "{D472F08C-9B81-4524-B829-27CFAF21064E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{9F2538F0-287A-4F42-9E2E-6808B27CA7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F2538F0-287A-4F42-9E2E-6808B27CA7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F2538F0-287A-4F42-9E2E-6808B27CA7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D472F08C-9B81-4524-B829-27CFAF21064E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D472F08C-9B81-4524-B829-27CFAF21064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D472F08C-9B81-4524-B829-27CFAF21064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D472F08C-9B81-4524-B829-27CFAF21064E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A887E51B-95BB-4B60-8AEA-18BE0F1BFB95} = {4720C572-0B43-41B0-8659-45673409B4A8}
 		{9F2538F0-287A-4F42-9E2E-6808B27CA7BC} = {E504339B-AD35-434A-9D5D-25EF9563394B}
+		{D472F08C-9B81-4524-B829-27CFAF21064E} = {4BC22BDD-BD57-4557-8745-2C4B5CE950CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BA483B7A-B2B5-4DBA-8494-BDD209A05605}
