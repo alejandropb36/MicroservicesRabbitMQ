@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MicroRabbit.Baking.Data\MicroRabbit.Baking.Data.csproj" />
+  </ItemGroup>
+
 </Project>
