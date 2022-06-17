@@ -1,11 +1,11 @@
-﻿using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace MicroRabbit.Baking.Data.Context
+namespace MicroRabbit.Banking.Data.Context
 {
-    public class BakingDbContext : DbContext
+    public class BankingDbContext : DbContext
     {
-        public BakingDbContext(DbContextOptions options) : base(options)
+        public BankingDbContext(DbContextOptions options) : base(options)
         {
         }
 

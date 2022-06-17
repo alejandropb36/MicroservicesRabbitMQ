@@ -1,8 +1,8 @@
-﻿using MicroRabbit.Baking.Application.Interfaces;
-using MicroRabbit.Baking.Application.Services;
-using MicroRabbit.Baking.Data.Context;
-using MicroRabbit.Baking.Data.Repositories;
-using MicroRabbit.Baking.Domain.Interfaces;
+﻿using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Application.Services;
+using MicroRabbit.Banking.Data.Context;
+using MicroRabbit.Banking.Data.Repositories;
+using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Domain.Core.Bus;
 using MicroRabbit.Infra.Bus;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +23,7 @@ namespace MicroRabbit.Infra.IoC
 
             // Data
             services.AddTransient<IAccountRepository, AccountRepository>();
-            services.AddTransient<BakingDbContext>();
+            services.AddTransient<BankingDbContext>();
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using MicroRabbit.Baking.Application.Interfaces;
-using MicroRabbit.Baking.Domain.Interfaces;
-using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Application.Interfaces;
+using MicroRabbit.Banking.Domain.Interfaces;
+using MicroRabbit.Banking.Domain.Models;
 
-namespace MicroRabbit.Baking.Application.Services
+namespace MicroRabbit.Banking.Application.Services
 {
     public class AccountService : IAccountService
     {

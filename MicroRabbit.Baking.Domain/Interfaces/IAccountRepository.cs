@@ -1,6 +1,6 @@
-﻿using MicroRabbit.Baking.Domain.Models;
+﻿using MicroRabbit.Banking.Domain.Models;
 
-namespace MicroRabbit.Baking.Domain.Interfaces
+namespace MicroRabbit.Banking.Domain.Interfaces
 {
     public interface IAccountRepository
     {

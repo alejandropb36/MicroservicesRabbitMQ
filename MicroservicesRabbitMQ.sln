@@ -27,13 +27,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C117D8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{30865ABA-BE53-4950-8943-88E48ECE5C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Baking.Api", "MicroRabbit.Baking.Api\MicroRabbit.Baking.Api.csproj", "{138A23CD-BD35-45DD-928A-2754612C77C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Api", "MicroRabbit.Baking.Api\MicroRabbit.Banking.Api.csproj", "{138A23CD-BD35-45DD-928A-2754612C77C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Baking.Application", "MicroRabbit.Baking.Application\MicroRabbit.Baking.Application.csproj", "{FAAAAF43-9D16-416C-AD42-F3F55844452D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Application", "MicroRabbit.Baking.Application\MicroRabbit.Banking.Application.csproj", "{FAAAAF43-9D16-416C-AD42-F3F55844452D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Baking.Data", "MicroRabbit.Baking.Data\MicroRabbit.Baking.Data.csproj", "{8B72233B-4238-4E98-A15C-7BC29492FA7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Data", "MicroRabbit.Baking.Data\MicroRabbit.Banking.Data.csproj", "{8B72233B-4238-4E98-A15C-7BC29492FA7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Baking.Domain", "MicroRabbit.Baking.Domain\MicroRabbit.Baking.Domain.csproj", "{B3ADEDE4-D66C-4747-846E-910DE5E179C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Domain", "MicroRabbit.Baking.Domain\MicroRabbit.Banking.Domain.csproj", "{B3ADEDE4-D66C-4747-846E-910DE5E179C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
