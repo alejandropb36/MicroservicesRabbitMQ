@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using MicroRabbit.Banking.Domain.Commands;
+using MicroRabbit.Banking.Domain.Events;
 using MicroRabbit.Domain.Core.Bus;
 
 namespace MicroRabbit.Banking.Domain.CommandHandlers
@@ -17,6 +18,7 @@ namespace MicroRabbit.Banking.Domain.CommandHandlers
         {
             // Logica para publicar el mensaje dentro del event bus rabbitmq
 
+            _bus.Publish(new TransferCreatedEvent(request.From, request.To, request.Amount));
 
             return Task.FromResult(true);
         }
