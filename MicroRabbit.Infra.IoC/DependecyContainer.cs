@@ -23,7 +23,7 @@ namespace MicroRabbit.Infra.IoC
     {
         public static IServiceCollection RegisterServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
+            //services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
 
             // MediaTR
             services.AddMediatR(Assembly.GetExecutingAssembly());
@@ -32,14 +32,14 @@ namespace MicroRabbit.Infra.IoC
             services.AddTransient<IEventBus, RabbitMQBus>();
 
             // Application services
-            services.AddTransient<IAccountService, AccountService>();
-            services.AddTransient<ITransferService, TransferService>();
+            //services.AddTransient<IAccountService, AccountService>();
+            //services.AddTransient<ITransferService, TransferService>();
 
             // Data
-            services.AddTransient<IAccountRepository, AccountRepository>();
-            services.AddTransient<ITransferRepository, TransferRepository>();
-            services.AddTransient<BankingDbContext>();
-            services.AddTransient<TransferDbContext>();
+            //services.AddTransient<IAccountRepository, AccountRepository>();
+            //services.AddTransient<ITransferRepository, TransferRepository>();
+            //services.AddTransient<BankingDbContext>();
+            //services.AddTransient<TransferDbContext>();
             return services;
         }
     }
