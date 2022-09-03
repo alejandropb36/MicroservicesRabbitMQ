@@ -29,6 +29,10 @@ builder.Services.AddTransient<ITransferService, TransferService>();
 builder.Services.AddTransient<TransferDbContext>();
 builder.Services.AddTransient<IEventHandler<TransferCreatedEvent>, TransferEventHandler>();
 
+// Subscriptions
+builder.Services.AddTransient<TransferEventHandler>();
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin()

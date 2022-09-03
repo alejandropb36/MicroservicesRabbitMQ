@@ -15,6 +15,7 @@ using MicroRabbit.Transfer.Data.Repositories;
 using MicroRabbit.Transfer.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using System.Reflection;
 
 namespace MicroRabbit.Infra.IoC
@@ -29,7 +30,14 @@ namespace MicroRabbit.Infra.IoC
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             // Domain Bus
-            services.AddTransient<IEventBus, RabbitMQBus>();
+            services.AddSingleton<IEventBus, RabbitMQBus>(sp =>
+            {
+                var scopeFactory = sp.GetService<IServiceScopeFactory>();
+                var optionsFactory = sp.GetService<IOptions<RabbitMQSettings>>();
+
+                return new RabbitMQBus(sp.GetService<IMediator>(), scopeFactory, optionsFactory);
+            });
+
 
             // Application services
             //services.AddTransient<IAccountService, AccountService>();
